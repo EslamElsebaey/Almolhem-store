@@ -11,7 +11,7 @@ $(document).ready(function(){
 // main Swiper 
 const mainSwiper = new Swiper('.mainBanner .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   draggable: true,
   navigation: {
     nextEl: ' .mainBanner .swiper-button-next',
@@ -35,7 +35,7 @@ const mainSwiper = new Swiper('.mainBanner .swiper', {
 
 const bestsellerSwiper = new Swiper(' .bestseller .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   draggable: true,
  
   pagination: {
@@ -68,7 +68,7 @@ const bestsellerSwiper = new Swiper(' .bestseller .swiper', {
 
 const specialOffersSwiper = new Swiper(' .special-offers .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   draggable: true,
  
   pagination: {
@@ -103,7 +103,7 @@ const specialOffersSwiper = new Swiper(' .special-offers .swiper', {
 
 const newArrivalSwiper = new Swiper(' .newArrivals .swiper', {
   loop: true,
-  // autoplay : true , 
+  autoplay : true , 
   draggable: true,
   
   pagination: {
@@ -137,7 +137,7 @@ const newArrivalSwiper = new Swiper(' .newArrivals .swiper', {
 
 const ceramicSwiper = new Swiper(' .ceramic .swiper', {
   loop: true,
-  // autoplay : true , 
+  autoplay : true , 
   draggable: true,
   
   pagination: {
@@ -169,7 +169,7 @@ const ceramicSwiper = new Swiper(' .ceramic .swiper', {
 
 const sanitaryWareSwiper = new Swiper(' .sanitary-ware .swiper', {
   loop: true,
-  // autoplay : true , 
+  autoplay : true , 
   draggable: true,
   
   pagination: {
@@ -201,7 +201,7 @@ const sanitaryWareSwiper = new Swiper(' .sanitary-ware .swiper', {
 
 const marbleSwiper = new Swiper(' .marble .swiper', {
   loop: true,
-  // autoplay : true , 
+  autoplay : true , 
   draggable: true,
   
   pagination: {
@@ -234,7 +234,7 @@ const marbleSwiper = new Swiper(' .marble .swiper', {
 
 const decorationsSwiper = new Swiper(' .decorations .swiper', {
   loop: true,
-  // autoplay : true , 
+  autoplay : true , 
   draggable: true,
   
   pagination: {
@@ -265,7 +265,7 @@ const decorationsSwiper = new Swiper(' .decorations .swiper', {
 // brands swiper
 const brandsSwiper = new Swiper('.brands .swiper', {
   loop: true,
-  // autoplay: true,
+  autoplay: true,
   navigation: {
     nextEl: ' .brands  .swiper-button-next ',
     prevEl: '.brands .swiper-button-prev',
