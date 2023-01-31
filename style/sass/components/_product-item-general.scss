@@ -46,11 +46,10 @@
         margin: 0;
         overflow: hidden;
         display: -webkit-box;
-        min-height: 30px;
+        height: 35px;
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
         font-size: 14px;
-        line-height: 20px;
         color: $main-color;
         font-weight: 400;
         text-align: center;

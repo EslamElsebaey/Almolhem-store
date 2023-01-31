@@ -171,10 +171,10 @@ img {
   background-color: #f89d45;
   position: fixed;
   inset-inline-end: 0;
+  padding: 27px 0;
   top: 202px;
   width: 36px;
   z-index: 20;
-  height: 165px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   display: flex;
@@ -198,6 +198,14 @@ img {
   -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
   transform: rotate(180deg);
+}
+
+html[dir=ltr] .maintainance {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 15px 0;
 }
 
 @-webkit-keyframes pulse-maintainance {
@@ -317,8 +325,7 @@ img {
 
 @media only screen and (max-width: 767px) {
   .maintainance {
-    width: 33px;
-    height: 145px;
+    padding: 17px 0;
   }
   .general-products-sec {
     padding: 50px 0;
@@ -329,7 +336,7 @@ img {
   }
   .title-text {
     margin-bottom: 25px;
-    font-size: 16px;
+    font-size: 17px;
   }
   .fixed-whatsapp {
     width: 50px;
@@ -1246,11 +1253,10 @@ nav .top-header {
   margin: 0;
   overflow: hidden;
   display: -webkit-box;
-  min-height: 30px;
+  height: 35px;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   font-size: 14px;
-  line-height: 20px;
   color: #243755;
   font-weight: 400;
   text-align: center;
@@ -1424,6 +1430,7 @@ nav .top-header {
 }
 
 .icon-holder {
+  padding: 12px;
   -webkit-margin-end: 20px;
           margin-inline-end: 20px;
   width: 55px;
@@ -1431,7 +1438,7 @@ nav .top-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 27px;
+  border-radius: 50%;
   background-color: #f89d45;
 }
 .icon-holder .icon {
@@ -1444,6 +1451,7 @@ nav .top-header {
   color: #243755;
   font-weight: 300;
   margin: 0;
+  line-height: 1.3;
 }
 
 @media screen and (max-width: 768px) {
@@ -1504,7 +1512,7 @@ footer .footer-title {
 }
 
 html[dir=ltr] .message input {
-  padding: 0 50px 0 25px;
+  padding: 0 151px 0 25px;
 }
 
 .logo-info img {
@@ -2051,6 +2059,7 @@ html[dir=ltr] .message input {
   font-size: 12px;
   display: flex;
   justify-content: center;
+  align-items: center;
   color: #ffffff;
   font-weight: 700;
   width: 47px;
@@ -2061,7 +2070,7 @@ html[dir=ltr] .message input {
 
 @media only screen and (max-width: 767px) {
   .bestseller, .special-offers {
-    padding: 50px 0 80px 0;
+    padding: 50px 0 60px 0;
   }
   .discount-sec {
     flex-direction: column;
@@ -2269,6 +2278,11 @@ html[dir=ltr] .message input {
 }
 
 .mega-item-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  max-width: 80%;
   font-size: 14px;
   color: #243755;
   text-align: center;
@@ -2302,14 +2316,14 @@ html[dir=ltr] .message input {
     margin-bottom: 12px;
     display: block;
   }
-  .mega-item::before {
-    content: "-";
-  }
   .mega-item:first-of-type {
     margin-top: 10px;
   }
   .mega-item-text {
     text-align: start;
+  }
+  .mega-item-text::before {
+    content: "- ";
   }
   .mega-item:hover .mega-item-text {
     color: #243755;

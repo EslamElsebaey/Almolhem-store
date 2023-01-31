@@ -22,13 +22,14 @@
     margin-top: 0;
     }
 .icon-holder{
+    padding: 12px;
     margin-inline-end: 20px;
     width: 55px;
     height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 27px;
+    border-radius: 50%;
     background-color: $second-color;
         .icon{
             font-size: 36px;
@@ -40,6 +41,7 @@
     color: $main-color;
     font-weight: 300;
     margin: 0;
+    line-height: 1.3;
     
 }
 

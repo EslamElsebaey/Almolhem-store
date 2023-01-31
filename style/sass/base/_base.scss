@@ -147,10 +147,10 @@ img {
 background-color: $second-color;
 position: fixed;
 inset-inline-end: 0;
+padding: 27px 0;
 top: 202px;
 width: 36px;
 z-index: 20;
-height: 165px;
 border-top-right-radius: 20px;
 border-bottom-right-radius: 20px;
 display: flex;
@@ -169,6 +169,16 @@ h3{
 writing-mode: vertical-rl;
 transform: rotate(180deg);
 }
+}
+
+html[dir="ltr"]{
+  .maintainance{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 15px 0;
+  }
 }
 
 
@@ -281,8 +291,7 @@ animation-iteration-count: infinite;
 
 @include max-768 {
   .maintainance{
-    width : 33px ;
-    height : 145px ;
+   padding: 17px 0;
   }
   .general-products-sec{
     padding: 50px 0;
@@ -293,7 +302,7 @@ animation-iteration-count: infinite;
   }
   .title-text{
     margin-bottom: 25px;
-    font-size: 16px;
+    font-size: 17px;
   }
   .fixed-whatsapp{
     width: 50px;

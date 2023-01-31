@@ -52,6 +52,11 @@
     }
 }
 .mega-item-text{
+         overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        max-width: 80%;
     font-size: 14px;
     color: $main-color;
     text-align: center;
@@ -86,15 +91,15 @@
        margin: 0;
        margin-bottom: 12px;
        display: block;
-       &::before{
-        content: "-";
-       }
     }
     .mega-item:first-of-type{
         margin-top: 10px;
     }
     .mega-item-text{
         text-align: start;
+        &::before{
+            content: "- ";
+           }
     }
     .mega-item:hover .mega-item-text{
         color: $main-color;
