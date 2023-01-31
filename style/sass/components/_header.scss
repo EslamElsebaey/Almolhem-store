@@ -437,9 +437,9 @@ nav{
   }
 
 
-.show-account-details , .show-lang-details {
-    opacity: 1 !important;
-    visibility: visible !important;
+.show-account-details  {
+    opacity: 1 ;
+    visibility: visible ;
 }
 
 .nav-arrow-rotate::after {
@@ -480,6 +480,13 @@ nav{
 }
 
  @include max-768 {
+  
+    .lang{
+        .lang-details{
+            display: none;
+        }
+    }
+   
     body{
         padding-top: 108.44px;
     }
@@ -495,12 +502,6 @@ nav{
         color: $second-color !important;
     }
     .lang {
-        &:hover{
-             .lang-details {
-                opacity: 0;
-                visibility: hidden;
-             }
-        }
         > a {
             display: flex;
             align-items: center;
@@ -545,6 +546,28 @@ nav{
     .header-dropdown{
         width: 115px;
         padding: 8px 10px;
+    }
+    .nav-dropdown-lang-details{
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+        border-radius: 0;
+        box-shadow: none;
+        // padding:8px 0px 8px 27px;
+        padding-inline-start: 27px;
+        transition: none;
+        li{
+            text-align: start;
+        }
+        a{
+            color: $main-color;
+            margin-bottom: 10px;
+            display: inline-block;
+            &:hover{
+                text-decoration: none;
+            }
+        }
     }
     .account-details{
         inset-inline-start: -44px;
@@ -638,6 +661,7 @@ nav{
   }
 
   nav{
+    overflow-y: auto;
     margin: 0;
     transition: all linear .3s ;
     z-index: 99;

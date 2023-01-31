@@ -833,9 +833,9 @@ nav .top-header {
   margin-bottom: 5px;
 }
 
-.show-account-details, .show-lang-details {
-  opacity: 1 !important;
-  visibility: visible !important;
+.show-account-details {
+  opacity: 1;
+  visibility: visible;
 }
 
 .nav-arrow-rotate::after {
@@ -871,6 +871,9 @@ nav .top-header {
   }
 }
 @media only screen and (max-width: 767px) {
+  .lang .lang-details {
+    display: none;
+  }
   body {
     padding-top: 108.44px;
   }
@@ -883,10 +886,6 @@ nav .top-header {
   }
   .user-color {
     color: #f89d45 !important;
-  }
-  .lang:hover .lang-details {
-    opacity: 0;
-    visibility: hidden;
   }
   .lang > a {
     display: flex;
@@ -925,6 +924,28 @@ nav .top-header {
   .header-dropdown {
     width: 115px;
     padding: 8px 10px;
+  }
+  .nav-dropdown-lang-details {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    display: none;
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-padding-start: 27px;
+            padding-inline-start: 27px;
+    transition: none;
+  }
+  .nav-dropdown-lang-details li {
+    text-align: start;
+  }
+  .nav-dropdown-lang-details a {
+    color: #243755;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  .nav-dropdown-lang-details a:hover {
+    text-decoration: none;
   }
   .account-details {
     inset-inline-start: -44px;
@@ -1009,6 +1030,7 @@ nav .top-header {
     color: #808080;
   }
   nav {
+    overflow-y: auto;
     margin: 0;
     transition: all linear 0.3s;
     z-index: 99;
@@ -1268,6 +1290,7 @@ nav .top-header {
 }
 
 .price {
+  height: 30px;
   width: 100%;
   justify-content: center;
   display: flex;

@@ -416,7 +416,7 @@ if($(window).width()  < 768 ) {
     $(this).children(".la-user").toggleClass("user-color");
   })
   $(".lang").click(function(){
-    $(".lang-details").toggleClass("show-lang-details ")
+    $(".nav-dropdown-lang-details").slideToggle(300)
   })
 }
 
