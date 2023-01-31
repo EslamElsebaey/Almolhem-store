@@ -1,0 +1,156 @@
+// new Arrivals
+.newArrivals{
+    background-color: $main-color;
+    position: relative;
+    padding: 75px 0 100px 0 ;
+    .title-text{
+        color: #fff;
+    }
+    .img-holder{
+        text-align: center;
+    }
+ }
+
+ @include max-768 {
+    .newArrivals {
+        padding : 50px 0 80px 0 ;
+      
+        .swiper-pagination-bullet{
+            // background-color: #000;
+            opacity: 1;
+        }
+     
+    }
+ }
+ //  *************************************************************************************************
+
+ 
+//  Bestseller
+.item-desc{
+    background-color: #fff;
+    border: 2px solid #e8e9eb;
+    border-top: none;
+}
+
+ 
+//  *************************************************************************************************
+ 
+
+// special offers
+
+.special-offers{
+    padding-bottom: 100px ;
+    position: relative;
+    .title-text{
+    text-align: center;
+    text-transform: capitalize;
+    }
+    .img-holder{
+        text-align: center;
+    }
+}
+.item-parent{
+    position: relative;
+}
+
+
+
+//  *************************************************************************************************
+
+
+ 
+
+// sanitary-ware 
+.sanitary-ware {
+    background-color: $main-color;
+    .title-text{
+        color: #fff;
+    }
+    .showMore{
+        background-color: #1c2d48;
+        color: #697c9b;
+        &:hover{
+            background-color: $second-color;
+            color: #fff;
+        }
+    }
+}
+
+
+
+//  *************************************************************************************************
+
+
+
+ 
+
+// decorations
+
+.decorations{
+    background-color: $main-color;
+    .title-text{
+        color: #fff;
+    }
+    .showMore{
+        background-color: #1c2d48;
+        color: #697c9b;
+        &:hover{
+            background-color: $second-color;
+            color: #fff;
+        }
+    }
+}
+
+
+
+//  *************************************************************************************************
+
+
+
+// general 
+
+.discount-sec{
+    position: absolute;
+    top: 5px;
+    inset-inline-start: 5px;
+    display: flex;
+}
+.discount{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+color: #ffffff;
+font-weight: 700;
+width: 69px;
+height: 22px;
+border-radius: 11px;
+background-color: $second-color;
+margin-inline-end: 3px;
+}
+.new{
+font-size: 12px;
+display: flex;
+justify-content: center;
+color: #ffffff;
+font-weight: 700;
+width: 47px;
+height: 22px;
+border-radius: 11px;
+background-color: #74cd5c;
+}
+ 
+ @include max-768 {
+    .bestseller , .special-offers  {
+        padding: 50px 0 80px 0;
+    }
+    .discount-sec{
+        flex-direction: column;
+    }
+    .new{
+        margin-top: 5px;
+    }
+ }
+
+
+
