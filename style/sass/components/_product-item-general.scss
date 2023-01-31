@@ -61,7 +61,6 @@
     }
 }
 .price{
-    height: 30px;
     width: 100%;
    justify-content: center;
     display: flex;
@@ -166,11 +165,13 @@ transition: all linear .2s;
     .price{
         flex-direction: column;
         line-height: normal;
-         margin: 10px 0 12px 0;
+         height: 50px;
+         justify-content: initial;
+         margin-bottom: 13px;
     }
     .item-desc .brand-name{
         height: auto;
-        min-height: 40px;
+        min-height: 30px;
         font-size: 14px;
         overflow: hidden;
         display: -webkit-box;
