@@ -192,6 +192,7 @@ nav {
             opacity: 1;
             visibility: visible;
         }
+       
     }
 }
 
@@ -748,6 +749,13 @@ nav{
 
 
 @include min-768 {
+    .lang{
+        &:hover{
+            .arabic-text .lang-type , .arabic-text i{
+                color: $second-color;
+            }
+        }
+    }
     .account-btn{
         &:hover{
             i{

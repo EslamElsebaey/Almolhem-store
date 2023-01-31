@@ -1111,6 +1111,9 @@ nav .top-header {
   }
 }
 @media only screen and (min-width: 768px) {
+  .lang:hover .arabic-text .lang-type, .lang:hover .arabic-text i {
+    color: #f89d45;
+  }
   .account-btn:hover i {
     color: #f89d45;
   }
