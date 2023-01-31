@@ -480,15 +480,17 @@ nav{
 }
 
  @include max-768 {
+    body{
+        padding-top: 108.44px;
+    }
     header{
         position: absolute;
         z-index: 999;
         background: rgb(255, 255, 255);
         width: 100%;
+        top: 0;
     }
-    .mainBanner{
-        padding-top: 108.44px;
-    }
+  
     .user-color {
         color: $second-color !important;
     }

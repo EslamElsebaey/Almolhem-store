@@ -409,7 +409,7 @@ $(".open-search-btn").click(function(){
 
 
 if($(window).width()  < 768 ) {
-  $('.category-item , .offers-banner').removeClass('wow');
+  // $('.category-item , .offers-banner').removeClass('wow');
   $(".account-btn").click(function(){
     $(".account-details").toggleClass("show-account-details");
     $(this).toggleClass("account-btn-color");
@@ -444,16 +444,7 @@ $(".li-drop").click(function (e) {
 // fire wow
 
 
-// wow = new WOW(
-//   {
-//   boxClass:     'wow',      // default
-//   animateClass: 'bounceInUp', // default
-//   offset:       0,          // default
-//   mobile:       false,       // default
-//   live:         false        // default
-// }
-// )
-// wow.init();
+
 new WOW().init();
 
 // **************************************************************************************************

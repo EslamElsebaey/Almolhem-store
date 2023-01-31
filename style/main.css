@@ -864,14 +864,15 @@ nav .top-header {
   }
 }
 @media only screen and (max-width: 767px) {
+  body {
+    padding-top: 108.44px;
+  }
   header {
     position: absolute;
     z-index: 999;
     background: rgb(255, 255, 255);
     width: 100%;
-  }
-  .mainBanner {
-    padding-top: 108.44px;
+    top: 0;
   }
   .user-color {
     color: #f89d45 !important;
