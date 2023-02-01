@@ -320,6 +320,8 @@ closeBtn.addEventListener("click" , function(){
 openBtn.addEventListener("click" , function(){
   $("nav").addClass("open-nav");  
   $("body").css("overflow" , "hidden") ;
+  $(".account-details").removeClass("show-account-details");
+  $(".account-btn").children(".la-user").removeClass("user-color");
 })
 
 // **************************************************************************************************
@@ -373,7 +375,9 @@ $(".footer-title").click(function(e){
             $(".search").css("display" , "none");
             $(".open-search-btn").css("display" , "block") ;
             $(".open-search-btn i").removeClass("la-times") ;
-            $("header").css("box-shadow" , "rgba(0, 0, 0, 0.24) 0px 3px 8px")
+            $("header").css("box-shadow" , "rgba(0, 0, 0, 0.24) 0px 3px 8px");
+            $(".account-details").removeClass("show-account-details");
+            $(".account-btn").children(".la-user").removeClass("user-color");
         } else {
             $("header").removeClass("fixed");
             $(".search").css("display" , "block");
@@ -399,10 +403,17 @@ $(".footer-title").click(function(e){
 
 
 $(".open-search-btn").click(function(){
+  $(".account-details").removeClass("show-account-details");
+  $(".account-btn").children(".la-user").removeClass("user-color");
   $(".search").slideToggle(300);
   $(this).children().toggleClass("la-times");
 })
 
+
+$(".cart").click(function(){
+  $(".account-details").removeClass("show-account-details");
+  $(".account-btn").children(".la-user").removeClass("user-color");
+})
 
 
 // **************************************************************************************************
