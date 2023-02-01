@@ -16,10 +16,9 @@
             content: "\f107";
             font-family: "line Awesome free";
             font-weight: 900;
-            position: absolute;
+            position: relative;
             font-size: 11px;
-            top: 2px;
-            inset-inline-end: -14px;
+            margin-inline-start: 2px;
         }
     }
 }
@@ -303,12 +302,6 @@ font-weight: 900;
     color: $main-color;
 }
 
-html[dir ="ltr"]{
-    .li-drop > a::after{
-        top: 4px;
-    }
-    
-}
 
 
 
@@ -320,7 +313,6 @@ background-color: $main-color;
 }
 }
 .li-drop > a {
-    line-height: 46px;
     position: relative;
     &::before{
     content: "";
@@ -445,7 +437,6 @@ nav{
 
 .nav-arrow-rotate::after {
     transform:  translateY(-50%) rotate(180deg)  !important;
-    top: 10px !important;
 }
 
 
@@ -749,6 +740,9 @@ nav{
 
 
 @include min-768 {
+    .li-drop > a{
+        line-height: 46px;
+    }
     .lang{
         &:hover{
             .arabic-text .lang-type , .arabic-text i{

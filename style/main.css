@@ -408,10 +408,10 @@ html[dir=ltr] .maintainance {
   content: "\f107";
   font-family: "line Awesome free";
   font-weight: 900;
-  position: absolute;
+  position: relative;
   font-size: 11px;
-  top: 2px;
-  inset-inline-end: -14px;
+  -webkit-margin-start: 2px;
+          margin-inline-start: 2px;
 }
 
 .account-text {
@@ -707,10 +707,6 @@ nav .mynav {
   color: #243755;
 }
 
-html[dir=ltr] .li-drop > a::after {
-  top: 4px;
-}
-
 nav {
   background-color: #243755;
 }
@@ -719,7 +715,6 @@ nav .closeBtn {
 }
 
 .li-drop > a {
-  line-height: 46px;
   position: relative;
 }
 .li-drop > a::before {
@@ -837,7 +832,6 @@ nav .top-header {
 
 .nav-arrow-rotate::after {
   transform: translateY(-50%) rotate(180deg) !important;
-  top: 10px !important;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1108,6 +1102,9 @@ nav .top-header {
   }
 }
 @media only screen and (min-width: 768px) {
+  .li-drop > a {
+    line-height: 46px;
+  }
   .lang:hover .arabic-text .lang-type, .lang:hover .arabic-text i {
     color: #f89d45;
   }
@@ -2357,7 +2354,14 @@ html[dir=ltr] .message input {
   position: relative;
   width: 100%;
   display: block;
+  overflow: hidden;
   z-index: 2;
+}
+.category-item img {
+  transition: all linear 0.3s;
+}
+.category-item:hover img {
+  transform: scale(1.1);
 }
 .category-item:hover span {
   color: #f89d45;

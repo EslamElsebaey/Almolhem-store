@@ -8,7 +8,14 @@
     position: relative;
     width: 100%;
     display: block;
+    overflow: hidden;
+    img{
+        transition: all linear .3s;
+    }
     &:hover{
+        img{
+            transform: scale(1.1);
+        }
         span{
             color: $second-color;
         }
