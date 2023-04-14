@@ -1,13 +1,14 @@
 
-$(document).ready(function(){
-    // preloader
-    setTimeout(function () {
-      $(".preloader").css({
-        opacity : "0" , 
-        visibility : "hidden" , 
-      })
-    }, 2000);
+$(window).load(function(){
+  $(".preloader").fadeOut();
+})
 
+
+
+
+$(document).ready(function(){
+  
+   
 // main Swiper 
 const mainSwiper = new Swiper('.mainBanner .swiper', {
   loop: true,
@@ -64,72 +65,6 @@ const bestsellerSwiper = new Swiper(' .bestseller .swiper', {
 });
 
 
-//    special-offers swiper
-
-const specialOffersSwiper = new Swiper(' .special-offers .swiper', {
-  loop: true,
-  autoplay: true,
-  draggable: true,
- 
-  pagination: {
-    el: '.special-offers .swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.special-offers .swiper-button-next ',
-    prevEl: '.special-offers .swiper-button-prev',
-  },
-  // Responsive breakpoints
-  breakpoints: {
-  
-    350: {
-      slidesPerView: 2,
-      spaceBetween: 15
-    },
-    770: {
-      slidesPerView: 3,
-      spaceBetween: 20
-    } , 
-    1199: {
-      slidesPerView: 4,
-      spaceBetween: 30
-    }
-  }
-});
-
-
-
-//  new arrivals swiper
-
-const newArrivalSwiper = new Swiper(' .newArrivals .swiper', {
-  loop: true,
-  autoplay : true , 
-  draggable: true,
-  
-  pagination: {
-    el: '.newArrivals .swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.newArrivals .swiper-button-next ',
-    prevEl: '.newArrivals .swiper-button-prev',
-  },
-  breakpoints: {
-  
-    350: {
-      slidesPerView: 2,
-      spaceBetween: 15
-    },
-    770: {
-      slidesPerView: 3,
-      spaceBetween: 20
-    } , 
-    1199: {
-      slidesPerView: 4,
-      spaceBetween: 30
-    }
-  }
-});
 
 
 
@@ -453,7 +388,6 @@ if($(window).width()  < 768 ) {
 if($(window).width() <= 768) {  
 $(".li-drop").click(function (e) {
   e.preventDefault() ;
-  console.log( $(this).children().children())
   $(this).children().children(".mega-items-parent").slideToggle(300) ;
   $(this).children(".nav-ancor").toggleClass("nav-arrow-rotate");
   $(".li-drop").not($(this)).children(".ul-drop").slideUp(300);

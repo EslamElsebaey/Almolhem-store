@@ -126,47 +126,47 @@ img {
   background-color: #243755;
 }
 
+/*preloader*/
 .preloader {
+  -webkit-pointer-events: none;
   pointer-events: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .progress {
   position: fixed;
-  z-index: 99999;
+  z-index: 222000;
   top: 0;
   width: 100%;
   height: 5px;
-  background-color: #243755;
+  background-color: #f89d45;
+  background-image: linear-gradient(to bottom, #f5f5f5, #f9f9f9);
+  background-repeat: repeat-x;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
   overflow: hidden;
 }
 
 .progress-bar {
-  -webkit-animation: progress 6s ease infinite;
-          animation: progress 6s ease infinite;
-  background-color: #f89d45;
-}
-
-@-webkit-keyframes progress {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+  animation: progress 6s ease infinite;
+  padding: 1px;
+  background-color: #243755;
+  /* border-radius: 4px 4px 4px 4px; */
 }
 
 @keyframes progress {
   from {
     width: 0;
+    color: rgba(255, 255, 255, 0);
   }
   to {
     width: 100%;
+    color: rgb(255, 255, 255);
   }
 }
+/*preloader*/
 .maintainance {
   background-color: #f89d45;
   position: fixed;
@@ -181,22 +181,17 @@ img {
   justify-content: center;
   align-items: center;
   transition: all linear 0.2s;
-  -webkit-animation-name: pulse-maintainance;
-          animation-name: pulse-maintainance;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: pulse-maintainance;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
 }
 .maintainance h3 {
   color: #ffffff;
   font-weight: 700;
   margin: 0;
   font-size: 14px;
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
 
@@ -206,15 +201,6 @@ html[dir=ltr] .maintainance {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   padding: 15px 0;
-}
-
-@-webkit-keyframes pulse-maintainance {
-  0% {
-    box-shadow: 0 0 0 0 #f89d45;
-  }
-  80% {
-    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
-  }
 }
 
 @keyframes pulse-maintainance {
@@ -272,27 +258,14 @@ html[dir=ltr] .maintainance {
   justify-content: center;
   align-items: center;
   background-color: #25d366;
-  -webkit-animation-name: pulse-whatsapp;
-          animation-name: pulse-whatsapp;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: pulse-whatsapp;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
 }
 .fixed-whatsapp i {
   font-size: 36px;
   color: #ffffff;
-}
-
-@-webkit-keyframes pulse-whatsapp {
-  0% {
-    box-shadow: 0 0 0 0 #25d366;
-  }
-  80% {
-    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
-  }
 }
 
 @keyframes pulse-whatsapp {
@@ -462,10 +435,6 @@ nav .mynav {
   font-size: 12px;
   color: #8e8e8e;
 }
-.search-item input:-ms-input-placeholder {
-  font-size: 12px;
-  color: #8e8e8e;
-}
 .search-item input::placeholder {
   font-size: 12px;
   color: #8e8e8e;
@@ -515,8 +484,7 @@ nav .mynav {
   color: #fff;
 }
 .search-btn:hover::before {
-  -webkit-animation: circle 0.75s;
-          animation: circle 0.75s;
+  animation: circle 0.75s;
 }
 .search-btn i {
   font-size: 20px;
@@ -538,20 +506,6 @@ nav .mynav {
   opacity: 0;
   visibility: hidden;
   transition: all linear 0.3s;
-}
-
-@-webkit-keyframes circle {
-  0% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  100% {
-    width: 200%;
-    height: 200%;
-    opacity: 0;
-  }
 }
 
 @keyframes circle {
@@ -1150,8 +1104,7 @@ nav .top-header {
   transform: skewX(-25deg);
 }
 .banner-item:hover::before {
-  -webkit-animation: shine 0.75s;
-          animation: shine 0.75s;
+  animation: shine 0.75s;
 }
 .banner-item img {
   width: 100%;
@@ -1185,12 +1138,6 @@ nav .top-header {
   font-size: 14px;
   color: #ffffff;
   font-weight: 700;
-}
-
-@-webkit-keyframes shine {
-  100% {
-    left: 125%;
-  }
 }
 
 @keyframes shine {
@@ -1620,8 +1567,7 @@ html[dir=ltr] .message input {
   transition: all linear 0.3s;
 }
 .message .subscribe:hover::before {
-  -webkit-animation: circle 0.75s;
-          animation: circle 0.75s;
+  animation: circle 0.75s;
 }
 .message .subscribe::before {
   position: absolute;
@@ -1802,9 +1748,6 @@ html[dir=ltr] .message input {
     width: 100%;
   }
   .message input::-moz-placeholder {
-    font-size: 13px;
-  }
-  .message input:-ms-input-placeholder {
     font-size: 13px;
   }
   .message input::placeholder {
@@ -2101,7 +2044,6 @@ html[dir=ltr] .message input {
 
 .brands-content {
   display: grid;
-  grid-template-columns: -webkit-max-content auto;
   grid-template-columns: max-content auto;
   align-items: center;
   -moz-column-gap: 65px;
